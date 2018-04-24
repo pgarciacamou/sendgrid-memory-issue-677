@@ -1,0 +1,52 @@
+{
+  "name": "sendgrid-memory-issue-677",
+  "version": "1.0.0",
+  "description": "Node server replica of issue",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint src",
+    "lintfix": "./node_modules/.bin/eslint src --fix",
+    "logs-staging": "heroku logs --tail --remote staging",
+    "logs-prod": "heroku logs --tail --remote production",
+    "start": "nodemon src/index.js"
+  },
+  "engines": {
+    "node": "9.8.0",
+    "npm": "5.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pgarciacamou/sendgrid-memory-issue-677.git"
+  },
+  "keywords": [
+    "sendgrid",
+    "memory",
+    "spike",
+    "issue",
+    "heroku",
+    "node"
+  ],
+  "author": "Pablo Garcia",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/pgarciacamou/sendgrid-memory-issue-677/issues"
+  },
+  "homepage": "https://github.com/pgarciacamou/sendgrid-memory-issue-677#readme",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-eslint": "^8.2.2",
+    "eslint": "^4.19.1",
+    "eslint-plugin-babel": "^5.0.0",
+    "nodemon": "^1.17.3"
+  },
+  "dependencies": {
+    "ejs": "^2.5.8",
+    "express": "^4.16.3",
+    "helmet": "^3.12.0",
+    "heroku-logger": "^0.3.0",
+    "lodash": "^4.17.5",
+    "node-fetch": "^2.1.2",
+    "promise-polyfill": "7.1.2",
+    "sendgrid": "^5.2.3"
+  }
+}
